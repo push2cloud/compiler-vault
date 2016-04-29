@@ -1,0 +1,31 @@
+{
+  "name": "push2cloud-compiler-vault",
+  "version": "1.0.0",
+  "description": "vault plugin for push2cloud-compiler",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "test": "npm run lint"
+  },
+  "engines": {
+    "node": ">=4.2.0"
+  },
+  "author": "Adriano Raiano <adriano@raiano.ch> (https://github.com/adrai)",
+  "contributors": [
+    "Adriano Raiano <adriano@raiano.ch> (https://github.com/adrai)",
+    "Christoph Hermann <schtoeffel@gmail.com> (http://stoeffel.github.io/)",
+    "Michael Erne <michael.erne@gmail.com> (https://github.com/michaelerne)"
+  ],
+  "license": "Apache-2.0",
+  "repository": "push2cloud/compiler-vault",
+  "homepage": "http://push2.cloud/",
+  "devDependencies": {
+    "eslint": "2.8.0"
+  },
+  "dependencies": {
+    "async": "2.0.0-rc.3",
+    "debug": "2.2.0",
+    "lodash": "4.11.1",
+    "request": "2.72.0"
+  }
+}
