@@ -1,6 +1,6 @@
 {
   "name": "push2cloud-compiler-vault",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "vault plugin for push2cloud-compiler",
   "main": "index.js",
   "scripts": {
