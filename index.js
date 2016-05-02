@@ -4,17 +4,6 @@ const async = require('async');
 const _ = require('lodash');
 const fs = require('fs');
 
-const debugCb = (debugFn, cb) => {
-  return (err, result) => {
-    if (err) {
-      debugFn('error', `Errorcode: ${err}`, result);
-    } else {
-      debugFn('success', result);
-    }
-    return cb.apply(cb, _.toArray(arguments));
-  };
-};
-
 const isVaultString = (string) => (string && _.isString(string) && string.indexOf('secret://') === 0);
 
 const getVaultKey = (string) => string.substring(9);
@@ -152,7 +141,7 @@ const getSecretFromVault = (key, appName, options, cb) => {
 const vault = (config, mani, t, next) => {
   if (!mani.deployment.secretStore || mani.deployment.secretStore.type !== 'vault') return next(null, config, mani, t);
 
-  var cb = debugCb(debug, next);
+  var cb = next;
 
   login(mani.deployment.secretStore, (err, token) => {
     if (err) return cb(err);
