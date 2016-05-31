@@ -20,12 +20,12 @@
   "repository": "push2cloud/compiler-vault",
   "homepage": "http://push2.cloud/",
   "devDependencies": {
-    "eslint": "2.8.0"
+    "eslint": "2.11.1"
   },
   "dependencies": {
     "async": "2.0.0-rc.3",
     "debug": "2.2.0",
-    "lodash": "4.11.1",
+    "lodash": "4.13.1",
     "request": "2.72.0"
   }
 }
